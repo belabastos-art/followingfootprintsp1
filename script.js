@@ -1,9 +1,9 @@
 var welcomeMessage = "As you follow the neon footprints, you arrive to the enchanted forest. For your surprise, at its entrance you are greeted by Boitatá, the serpent guardian of the forests, who has been waiting for you. It coils gently around you and whispers that together you will reveal your purpose in this adventure. The Macaloba ceremony is about to start share the day and month of your birth and the first letter of your name and let the forest reveal what it holds for you.";
 
-// stores the data
+// stores data
 var purposeData;
 
-// when page loads
+//  page loads
 window.onload = function() {
     // show welcome text immediately
     document.getElementById('text').textContent = welcomeMessage;
@@ -45,20 +45,4 @@ function findPurpose() {
     document.getElementById('purposeText').textContent = fullPurpose;
     document.getElementById('intro').className = 'hide';
     document.getElementById('result').className = '';
-}
-
-// if they like their purpose
-function celebrate() {
-    alert('✨ Your adventure through the enchanted forest begins now! ✨');
-}
-
-// lets them try again
-function tryAgain() {
-    document.getElementById('result').className = 'hide';
-    document.getElementById('intro').className = '';
-    
-    // clear the form
-    document.getElementById('day').value = '';
-    document.getElementById('letter').value = '';
-    document.getElementById('month').value = '';
 }
