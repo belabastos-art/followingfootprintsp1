@@ -1,0 +1,146 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: rgb(255, 16, 240);
+    height: 100vh;
+    overflow: hidden;
+    background-image: 
+        radial-gradient(circle, rgb(255, 16, 240) 1px, transparent 1px),
+        radial-gradient(circle, rgb(57, 255, 20) 1px, transparent 1px);
+    background-size: 50px 50px, 70px 70px;
+    background-position: 0 0, 25px 25px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    border-right: 2px solid rgb(255, 16, 240);
+}
+
+.image-box {
+    width: 650px;
+    height: 450px;
+    border: 3px solid rgb(255, 16, 240);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-side {
+    width: 50%;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: rgb(255, 16, 240);
+}
+
+.welcome-text {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    color: rgb(57, 255, 20);
+    line-height: 1.6;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: rgb(57, 255, 20);
+    font-size: 0.85rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 16, 240);
+    color: rgb(255, 16, 240);
+    font-size: 0.95rem;
+    font-family: 'Courier New', monospace;
+    border-radius: 5px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: rgb(57, 255, 20);
+}
+
+select option {
+    background-color: black;
+    color: rgb(255, 16, 240);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: 2px solid rgb(57, 255, 20);
+    color: rgb(57, 255, 20);
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#result h2 {
+    font-size: 1.5rem;
+    color: rgb(255, 16, 240);
+    margin-bottom: 20px;
+}
+
+.purpose-text {
+    font-size: 2rem;
+    color: rgb(57, 255, 20);
+    margin-bottom: 15px;
+}
+
+.message {
+    font-size: 1rem;
+    color: rgb(57, 255, 20);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    width: auto;
+    padding: 12px 30px;
+    font-size: 0.9rem;
+}
+
+.hide {
+    display: none;
+}
